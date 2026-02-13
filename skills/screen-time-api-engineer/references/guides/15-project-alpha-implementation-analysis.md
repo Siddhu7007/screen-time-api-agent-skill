@@ -28,11 +28,12 @@ Document Project Alpha’s Screen Time implementation as a concrete reference an
 - [ ] Token icon rendering remains stable after app relaunch.
 
 ## Sources
+- Template note: Replace `{{PROJECT_ALPHA_PATH}}` with your local repository root before opening project-observed files.
 - `../rundowns/10-project-alpha-rundown.md`
-- `/path/to/project-alpha/ProjectAlpha/AppLocking/ProjectAlphaLockManager.swift`
-- `/path/to/project-alpha/ProjectAlphaMonitor/DeviceActivityMonitorExtension.swift`
-- `/path/to/project-alpha/ProjectAlphaShieldConfiguration/ShieldConfigurationExtension.swift`
-- `/path/to/project-alpha/ProjectAlphaShieldAction/ShieldActionExtension.swift`
+- `{{PROJECT_ALPHA_PATH}}/ProjectAlpha/AppLocking/ProjectAlphaLockManager.swift`
+- `{{PROJECT_ALPHA_PATH}}/ProjectAlphaMonitor/DeviceActivityMonitorExtension.swift`
+- `{{PROJECT_ALPHA_PATH}}/ProjectAlphaShieldConfiguration/ShieldConfigurationExtension.swift`
+- `{{PROJECT_ALPHA_PATH}}/ProjectAlphaShieldAction/ShieldActionExtension.swift`
 
 ## Confidence Notes
 - This analysis is `project-observed` and grounded in current repository state as of `2026-02-08`.

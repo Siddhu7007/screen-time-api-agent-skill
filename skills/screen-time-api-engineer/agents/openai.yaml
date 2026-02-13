@@ -1,0 +1,4 @@
+interface:
+  display_name: "Screen Time API Engineer"
+  short_description: "Implement and harden iOS Screen Time features with FamilyControls, ManagedSettings, ManagedSettingsUI, and DeviceActivity."
+  default_prompt: "Use this skill to implement, debug, and harden Screen Time API features with source-grounded guidance, explicit risks, and validation checklists."

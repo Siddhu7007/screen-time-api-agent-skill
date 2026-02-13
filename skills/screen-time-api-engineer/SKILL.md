@@ -1,6 +1,6 @@
 ---
 name: screen-time-api-engineer
-description: Comprehensive iOS 16+ Screen Time API engineering guide for building app/website blocking, custom shields, schedule-based enforcement, onboarding permission flows, and usage analytics reports. Use when implementing, reviewing, debugging, or shipping features using FamilyControls, ManagedSettings, ManagedSettingsUI, DeviceActivity, and ScreenTime; also use for entitlement/distribution setup and cross-project architecture hardening.
+description: iOS 16+ Screen Time engineering skill for FamilyControls, ManagedSettings, ManagedSettingsUI, ScreenTime, and DeviceActivity/DeviceActivityMonitor extension workflows. Use for app and website blocking, custom shields, shield action handling, schedule-based enforcement, onboarding authorization flows, usage analytics reports, entitlement setup, App Review readiness, debugging, and production hardening.
 ---
 
 # Screen Time API Engineer

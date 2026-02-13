@@ -13,7 +13,8 @@ This skill is designed for implementation, debugging, hardening, and release-rea
 
 ```bash
 npx skills add Siddhu7007/screen-time-api-agent-skill --list
-npx skills add Siddhu7007/screen-time-api-agent-skill --skill screen-time-api-engineer -g -y
+npx skills add Siddhu7007/screen-time-api-agent-skill -a codex -g -y --skill screen-time-api-engineer
+npx skills add https://github.com/Siddhu7007/screen-time-api-agent-skill/tree/main/skills/screen-time-api-engineer -a codex -g -y
 ```
 
 For Codex users: `Restart Codex to pick up new skills.`
@@ -51,6 +52,14 @@ Use this skill when you need to:
 - "Design a production onboarding flow for Screen Time authorization with fallback UX."
 - "Run a release readiness review for entitlements, extensions, and policy parity."
 
+## Using In Codex
+
+After installation, you can invoke the skill explicitly in prompts:
+
+```text
+$screen-time-api-engineer
+```
+
 ## Validation
 
 Run these checks from repo root:
@@ -59,6 +68,7 @@ Run these checks from repo root:
 bash skills/screen-time-api-engineer/scripts/check_required_sections.sh
 python3 skills/screen-time-api-engineer/scripts/check_source_coverage.py
 npx skills add . --list
+npx skills add Siddhu7007/screen-time-api-agent-skill --list
 ```
 
 Expected result:
@@ -66,12 +76,18 @@ Expected result:
 - Source coverage check passes
 - `npx skills ... --list` shows `screen-time-api-engineer`
 
+## Safety
+
+See `SECURITY.md` for script execution and secret-handling guidance.
+
 ## Repository Structure
 
 ```text
 skills/
   screen-time-api-engineer/
     SKILL.md
+    agents/
+      openai.yaml
     references/
     scripts/
     assets/

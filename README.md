@@ -19,6 +19,20 @@ npx skills add https://github.com/Siddhu7007/screen-time-api-agent-skill/tree/ma
 
 For Codex users: `Restart Codex to pick up new skills.`
 
+## Where Skills Go (by agent)
+
+Common install locations if you want to place the skill manually:
+
+- Codex (project): `.agents/skills/`
+- Codex (global): `~/.codex/skills/`
+- Claude Code: `.claude/skills/`
+
+If you copy manually, keep this package path intact:
+
+```text
+skills/screen-time-api-engineer
+```
+
 ## Skill Path
 
 ```text

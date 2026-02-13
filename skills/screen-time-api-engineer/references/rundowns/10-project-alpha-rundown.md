@@ -1,7 +1,8 @@
 # 10 Project Alpha Rundown
 
 ## Scope
-- Codebase: `/path/to/project-alpha`
+- Template note: Replace `{{PROJECT_ALPHA_PATH}}` with your local repository root before following file references.
+- Codebase: `{{PROJECT_ALPHA_PATH}}`
 - Focus: FamilyControls, ManagedSettings, ManagedSettingsUI, DeviceActivity, onboarding permission UX, icon/token display.
 
 ## Target and Entitlement Topology
@@ -9,10 +10,10 @@
   - `com.apple.developer.family-controls`
   - App Group: `group.com.example.projectalpha.shared`
 - Entitlements files:
-  - `/path/to/project-alpha/ProjectAlpha/ProjectAlpha.entitlements`
-  - `/path/to/project-alpha/ProjectAlpha/ProjectAlphaMonitor.entitlements`
-  - `/path/to/project-alpha/ProjectAlpha/ProjectAlphaShieldConfiguration.entitlements`
-  - `/path/to/project-alpha/ProjectAlpha/ProjectAlphaShieldAction.entitlements`
+  - `{{PROJECT_ALPHA_PATH}}/ProjectAlpha/ProjectAlpha.entitlements`
+  - `{{PROJECT_ALPHA_PATH}}/ProjectAlpha/ProjectAlphaMonitor.entitlements`
+  - `{{PROJECT_ALPHA_PATH}}/ProjectAlpha/ProjectAlphaShieldConfiguration.entitlements`
+  - `{{PROJECT_ALPHA_PATH}}/ProjectAlpha/ProjectAlphaShieldAction.entitlements`
 
 ## Architecture Map
 - Main coordinator: `ShieldController` (`ProjectAlphaLockManager.swift`).
@@ -42,9 +43,9 @@
 
 ## Shield UI/Action
 - Custom terminal-themed shield in:
-  - `/path/to/project-alpha/ProjectAlphaShieldConfiguration/ShieldConfigurationExtension.swift`
+  - `{{PROJECT_ALPHA_PATH}}/ProjectAlphaShieldConfiguration/ShieldConfigurationExtension.swift`
 - Shield action behavior:
-  - `.close` response for primary actions in `/path/to/project-alpha/ProjectAlphaShieldAction/ShieldActionExtension.swift`
+  - `.close` response for primary actions in `{{PROJECT_ALPHA_PATH}}/ProjectAlphaShieldAction/ShieldActionExtension.swift`
 
 ## Real App Icon Strategy
 - Project Alpha renders token labels directly:

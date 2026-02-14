@@ -1,7 +1,8 @@
 # 11 Project Beta Rundown
 
 ## Scope
-- Codebase: `/path/to/project-beta`
+- Template note: Replace `{{PROJECT_BETA_PATH}}` with your local repository root before following file references.
+- Codebase: `{{PROJECT_BETA_PATH}}`
 - Focus: same Screen Time API surface as Project Alpha, with schedule-heavy onboarding.
 
 ## Target and Entitlement Topology
@@ -9,9 +10,9 @@
   - `com.apple.developer.family-controls`
   - App Group: `group.com.example.projectbeta.shared`
 - Core files:
-  - `/path/to/project-beta/ProjectBeta/ProjectBeta.entitlements`
-  - `/path/to/project-beta/ProjectBetaMonitor/ProjectBetaMonitor.entitlements`
-  - `/path/to/project-beta/ProjectBetaShield/ProjectBetaShield.entitlements`
+  - `{{PROJECT_BETA_PATH}}/ProjectBeta/ProjectBeta.entitlements`
+  - `{{PROJECT_BETA_PATH}}/ProjectBetaMonitor/ProjectBetaMonitor.entitlements`
+  - `{{PROJECT_BETA_PATH}}/ProjectBetaShield/ProjectBetaShield.entitlements`
 
 ## Architecture Map
 - Coordinator: `AppBlockingManager` (authorization, selection, immediate shielding, schedule setup).
@@ -38,9 +39,9 @@
 
 ## Shield UI/Action
 - Shield configuration uses day/night-aware copy and style in:
-  - `/path/to/project-beta/ProjectBetaShield/ShieldConfiguration.swift`
+  - `{{PROJECT_BETA_PATH}}/ProjectBetaShield/ShieldConfiguration.swift`
 - Shield action delegates in:
-  - `/path/to/project-beta/ProjectBetaShield/ShieldAction.swift`
+  - `{{PROJECT_BETA_PATH}}/ProjectBetaShield/ShieldAction.swift`
 
 ## Real App Icon Strategy
 - Project Beta dashboard uses `Label(token)` for selected app icons:

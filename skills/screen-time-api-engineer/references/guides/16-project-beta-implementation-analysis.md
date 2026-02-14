@@ -28,11 +28,12 @@ Document Project Beta’s Screen Time implementation and extract reusable patter
 - [ ] Report any schedule registration errors beyond console output.
 
 ## Sources
+- Template note: Replace `{{PROJECT_BETA_PATH}}` with your local repository root before opening project-observed files.
 - `../rundowns/11-project-beta-rundown.md`
-- `/path/to/project-beta/ProjectBeta/AppBlockingManager.swift`
-- `/path/to/project-beta/ProjectBetaMonitor/DeviceActivityMonitor.swift`
-- `/path/to/project-beta/ProjectBetaShield/ShieldConfiguration.swift`
-- `/path/to/project-beta/ProjectBetaShield/ShieldAction.swift`
+- `{{PROJECT_BETA_PATH}}/ProjectBeta/AppBlockingManager.swift`
+- `{{PROJECT_BETA_PATH}}/ProjectBetaMonitor/DeviceActivityMonitor.swift`
+- `{{PROJECT_BETA_PATH}}/ProjectBetaShield/ShieldConfiguration.swift`
+- `{{PROJECT_BETA_PATH}}/ProjectBetaShield/ShieldAction.swift`
 
 ## Confidence Notes
 - This analysis is `project-observed` and grounded in current repository state as of `2026-02-08`.

@@ -11,9 +11,33 @@ This skill is designed for implementation, debugging, hardening, and release-rea
 
 ## Install
 
+Quick start (interactive):
+
+```bash
+npx skills add Siddhu7007/screen-time-api-agent-skill
+```
+
+Codex global install (non-interactive, specific skill):
+
+```bash
+npx skills add Siddhu7007/screen-time-api-agent-skill -a codex -g -y --skill screen-time-api-engineer
+```
+
+Install all skills in this repo for all supported agents:
+
+```bash
+npx skills add Siddhu7007/screen-time-api-agent-skill --all
+```
+
+Verify discovery without installing:
+
 ```bash
 npx skills add Siddhu7007/screen-time-api-agent-skill --list
-npx skills add Siddhu7007/screen-time-api-agent-skill -a codex -g -y --skill screen-time-api-engineer
+```
+
+Alternative direct skill-path install:
+
+```bash
 npx skills add https://github.com/Siddhu7007/screen-time-api-agent-skill/tree/main/skills/screen-time-api-engineer -a codex -g -y
 ```
 

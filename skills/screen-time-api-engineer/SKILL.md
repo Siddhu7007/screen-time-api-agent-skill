@@ -16,6 +16,11 @@ Use this skill to implement and harden Screen Time API apps with a docs-first ev
 - If sources conflict, prefer canonical + SDK behavior.
 - Mark uncertain conclusions as inference and include a caveat.
 
+## SDK Baseline
+- Evidence re-verified against the iOS 27.0 SDK (Xcode 27.0, build 27A266a) on 2026-10-21.
+- iOS 26.2 to 26.5 added Screen Time APIs: picker title, data access (EU only), shield submenus, token refresh, store lifecycle. iOS 27.0 added none.
+- Gate any API newer than the app's deployment target with `#available` and state the iOS version it needs.
+
 ## Quick Start Workflow
 1. Identify user goal category.
 2. Open matching references from `references/guides`.
@@ -40,6 +45,9 @@ Use this skill to implement and harden Screen Time API apps with a docs-first ev
   - `references/guides/09-deviceactivity-scheduling-thresholds-and-errors.md`
   - `references/guides/10-deviceactivity-monitor-extension-playbook.md`
 - **Usage analytics reporting**:
+  - `references/guides/11-deviceactivity-report-analytics-architecture.md`
+- **Reading usage data in the host app (iOS 26.4+, EU only)**:
+  - `references/guides/02-authorization-setup.md`
   - `references/guides/11-deviceactivity-report-analytics-architecture.md`
 - **Web usage control/reporting via ScreenTime framework**:
   - `references/guides/12-screentime-framework-web-usage-reporting.md`
@@ -74,6 +82,6 @@ When using this skill for implementation guidance, include:
 4. Source citations with confidence labels.
 
 ## Boundaries
-- Do not infer private APIs or unsupported token conversion techniques.
+- Do not infer private APIs or unsupported token conversion techniques. The iOS 26.4 data-access APIs are the only documented way for the host app to read the bundle IDs or domains behind a person's apps and sites.
 - Do not claim behavior beyond canonical/SDK support without explicit caveats.
 - Do not skip extension-signing parity checks when discussing release readiness.

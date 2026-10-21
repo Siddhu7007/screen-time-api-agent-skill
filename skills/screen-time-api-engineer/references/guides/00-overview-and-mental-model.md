@@ -5,6 +5,7 @@ Define the end-to-end Screen Time API architecture for building iOS 16+ app/webs
 
 ## Canonical API Surface
 - `FamilyControls`: authorization + selection (`AuthorizationCenter`, `FamilyActivityPicker`, `FamilyActivitySelection`).
+- `FamilyControls` + `DeviceActivity` data access (iOS 26.4+): `FamilyActivityData` and `DeviceActivityData.activityData(filteredBy:using:)` return non-tokenized usage data. Separate entitlement; customer installs in the EU only.
 - `ManagedSettings`: enforcement (`ManagedSettingsStore`, `ShieldSettings`, web content filtering, app blocking knobs).
 - `ManagedSettingsUI`: custom shield display and action extension points.
 - `DeviceActivity`: schedule/event monitoring and background enforcement callbacks.
@@ -21,7 +22,7 @@ Define the end-to-end Screen Time API architecture for building iOS 16+ app/webs
 7. Render usage reports with report extension and context-based filtering.
 
 ## Failure Modes
-- Treating tokens as bundle IDs or stable app metadata.
+- Treating tokens as bundle IDs or stable app metadata. Tokens stay opaque; since iOS 26.4 the data-access path returns bundle IDs alongside tokens.
 - Applying shields without checking authorization status.
 - Omitting app-group sharing across targets.
 - Attempting network calls in report extension sandbox.
@@ -43,4 +44,5 @@ Define the end-to-end Screen Time API architecture for building iOS 16+ app/webs
 
 ## Confidence Notes
 - Framework role separation is `canonical + sdk-backed`.
+- Data-access availability (iOS 26.4+, EU-only for customer installs) is `canonical`, from Apple's `FamilyActivityData` and `approvedWithDataAccess` docs.
 - The exact product UX ordering is an implementation choice (`inference`, validated by project rundowns).

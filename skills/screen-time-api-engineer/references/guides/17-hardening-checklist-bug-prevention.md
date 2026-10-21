@@ -15,6 +15,8 @@ Provide a prevention-first checklist to reduce production bugs in Screen Time AP
 - Validate monitor intervals and activity count before calling `startMonitoring`.
 - Keep clear-all emergency reset in settings/debug paths.
 - Add deterministic logging keys for monitor/store/action lifecycle.
+- Rebuild against each new SDK. The iOS 26.4 SDK added cases to `AuthorizationStatus`, `FamilyControlsError` and `ShieldAction`, which breaks exhaustive switches with no `default`.
+- On iOS 26.5+, observe `tokensDidExpire` and refresh persisted tokens.
 
 ## Failure Modes
 - Stale restrictions after crashes/restarts.
@@ -28,10 +30,12 @@ Provide a prevention-first checklist to reduce production bugs in Screen Time AP
 - [ ] Monitor error handling is user-visible and telemetry-visible.
 - [ ] Named store inventory is finite and documented.
 - [ ] Recovery path can clear all stores without reinstall.
+- [ ] Token-expiry handling (iOS 26.5+) refreshes persisted tokens and logs refresh failures.
 
 ## Sources
 - `../evidence/04-deviceactivity-sdk-signatures.md`
 - `../evidence/02-managedsettings-sdk-signatures.md`
+- `../evidence/01-familycontrols-sdk-signatures.md`
 - `../rundowns/12-cross-project-rundown.md`
 
 ## Confidence Notes

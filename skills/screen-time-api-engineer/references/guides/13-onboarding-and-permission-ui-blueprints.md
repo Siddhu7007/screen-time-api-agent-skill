@@ -20,9 +20,11 @@ Define a resilient onboarding sequence for Screen Time authorization, app select
 - Silent authorization errors (`try?` with no UX fallback).
 - Allowing onboarding completion without valid selection.
 - Not handling post-approval revocation.
+- Showing a "not authorized" state when status is `.approvedWithDataAccess` (iOS 26.4+).
 
 ## Validation Checklist
 - [ ] UI differentiates `.notDetermined` vs `.denied` states.
+- [ ] UI treats `.approvedWithDataAccess` as authorized (iOS 26.4+).
 - [ ] Picker opens only when authorized.
 - [ ] Selection summary updates immediately after picker change.
 - [ ] Recovery copy includes Settings navigation path.

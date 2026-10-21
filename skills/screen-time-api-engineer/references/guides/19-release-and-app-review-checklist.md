@@ -26,10 +26,12 @@ Provide a release-safe checklist for TestFlight/App Store deployment of Screen T
 - [ ] App groups identical across app and extension targets.
 - [ ] Entitlement approval dependency tracked in release timeline.
 - [ ] Real-device smoke run performed on production provisioning profile.
+- [ ] If the app reads usage data (iOS 26.4+): App and Website Usage capability is on the right target in Debug + Release. The pages checked don't say whether App Store distribution needs a separate approval, so confirm with Apple first.
 
 ## Sources
 - https://developer.apple.com/documentation/xcode/configuring-family-controls
 - https://developer.apple.com/documentation/familycontrols/requesting-the-family-controls-entitlement
+- https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage
 - https://developer.apple.com/contact/request/family-controls-distribution
 - `../evidence/07-claim-reconciliation.md`
 

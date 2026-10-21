@@ -9,6 +9,8 @@ A production-oriented agent skill for building and shipping iOS Screen Time feat
 
 This skill is designed for implementation, debugging, hardening, and release-readiness workflows.
 
+API evidence is checked against the iOS 27.0 SDK (Xcode 27.0). See `CHANGELOG.md` for what changed in each release.
+
 ## Install
 
 Quick start (interactive):
@@ -81,6 +83,7 @@ Use this skill when you need to:
 - DeviceActivity scheduling, thresholds, monitor extension behavior.
 - Usage analytics/reporting architecture and reliability checks.
 - Release and App Review checklist for Screen Time apps.
+- iOS 26.x additions: data access (EU only), shield submenus, token refresh, store lifecycle.
 
 ## Example Prompts
 

@@ -89,6 +89,23 @@ Source matrix:
 | https://developer.apple.com/documentation/screentime/stscreentimeconfigurationobserver | Apple Doc | high | Canonical Apple source |
 | https://developer.apple.com/documentation/screentime/stwebpagecontroller | Apple Doc | high | Canonical Apple source |
 | https://developer.apple.com/documentation/analytics-reports/app-runtime-usage | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/familycontrols/familyactivitydata | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/familycontrols/authorizationstatus/approvedwithdataaccess | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/familycontrols/familycontrolserror/unauthorized | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.family-controls.app-and-website-usage | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/swiftui/view/familyactivitypicker(title:headertext:footertext:ispresented:selection:) | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/deviceactivity/deviceactivitydata/activitydata(filteredby:using:) | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/deviceactivity/deviceactivitydata/policy | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/deviceactivity/deviceactivitydata/error | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettingsui/shieldconfiguration/secondarybuttonsubmenuitems | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/shieldactionresponse/openparentalcontrolsapp | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/managedsettingsstore/tokenexpirymessage | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/managedsettingsstore/refresh(_:)-65mti | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/managedsettingsstore/isactive | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/managedsettingsstore/stores | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/managedsettingsstore/deletestore() | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/managedsettingsstore/deletestores(_:) | Apple Doc | high | Canonical Apple source |
+| https://developer.apple.com/documentation/managedsettings/managedsettingsstore/effectivedenyexplicitcontent | Apple Doc | high | Canonical Apple source |
 | https://developer.apple.com/videos/play/wwdc2021/10123/ | WWDC | high | Canonical Apple source |
 | https://developer.apple.com/videos/play/wwdc2022/110336/ | WWDC | high | Canonical Apple source |
 | https://developer.apple.com/videos/play/wwdc2022/110341/ | WWDC | high | Canonical Apple source |
